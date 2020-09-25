@@ -1,10 +1,10 @@
 using System;
 
 namespace Observer
-{    public interface IObserbable<T>
+{    public interface IObservable
     {
-        void Subscribe(T observer);
-        void Unsubscribe(T observer);
-        void NotifyObservers();
+        void Subscribe(IObserver observer);
+        void Unsubscribe(IObserver observer);
+        void GetTemperature();
     }
 }
