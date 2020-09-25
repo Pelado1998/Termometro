@@ -6,7 +6,7 @@ namespace Observer
     {
         static void Main(string[] args)
         {
-            IObservable<TemperatureSensor> monitor = new IObservable<TemperatureSensor>();
+            TemperatureSensor monitor = new TemperatureSensor();
             TemperatureReporter reporter = new TemperatureReporter();
             reporter.StartReporting(monitor);
             monitor.GetTemperature();
